@@ -8,9 +8,12 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -25,14 +28,14 @@ public class DataProviderTesting {
 	@BeforeMethod
 	public void launchBrowser() throws IOException
 	{
-		System.setProperty("webdriver.chrome.driver", "E:\\Automation\\practice\\SeleniumPractice\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAMU\\git\\TestNG\\TestNGPractice\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		
-		String propfile = "E:\\Automation\\practice\\TestNGPractice\\InputTestData\\config.properties";
+		String propfile = "C:\\Users\\RAMU\\git\\TestNG\\TestNGPractice\\InputTestData\\config.properties";
 		File file1 = new File(propfile);
 		FileInputStream fip = new FileInputStream(file1);
 			
@@ -47,7 +50,7 @@ public class DataProviderTesting {
 	{
 		ArrayList<Object[]> data = new ArrayList<Object[]>();
 		
-		String ext = "E:\\Automation\\practice\\TestNGPractice\\InputTestData\\inputdata.xlsx";
+		String ext = "C:\\Users\\RAMU\\git\\TestNG\\TestNGPractice\\InputTestData\\inputdata.xlsx";
 		File f = new File(ext);
 		FileInputStream fis = new FileInputStream(f);
 
@@ -69,7 +72,7 @@ public class DataProviderTesting {
 	public void fbLogin(String username, String password) throws IOException
 	{
 
-		String propfile = "E:\\Automation\\practice\\TestNGPractice\\InputTestData\\config.properties";
+		String propfile = "C:\\Users\\RAMU\\git\\TestNG\\TestNGPractice\\InputTestData\\config.properties";
 		File file1 = new File(propfile);
 		FileInputStream fip = new FileInputStream(file1);
 			
@@ -80,6 +83,9 @@ public class DataProviderTesting {
 		driver.findElement(By.xpath(prop.getProperty("password_xpath"))).sendKeys(password);
 
 		driver.findElement(By.xpath(prop.getProperty("loginbtn_xpath"))).click();
+		
+		File FBLoginDetailsImage = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(FBLoginDetailsImage, new File("C:\\Users\\RAMU\\git\\TestNG\\TestNGPractice\\FBLoginDetailsImages\\image.png"));
 
 	}
 	@AfterMethod

@@ -1,17 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1296" started-at="2019-03-05T05:51:16Z" finished-at="2019-03-05T05:51:17Z">
+  <suite name="Default suite" duration-ms="137106" started-at="2019-03-06T08:45:29Z" finished-at="2019-03-06T08:47:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1296" started-at="2019-03-05T05:51:16Z" finished-at="2019-03-05T05:51:17Z">
-      <class name="extentReport.ExtentReportGeneration">
-        <test-method status="PASS" signature="test()[pri:0, instance:extentReport.ExtentReportGeneration@28d25987]" name="test" duration-ms="1213" started-at="2019-03-05T05:51:16Z" finished-at="2019-03-05T05:51:17Z">
+    <test name="Default test" duration-ms="137106" started-at="2019-03-06T08:45:29Z" finished-at="2019-03-06T08:47:46Z">
+      <class name="com.testng.topics.DataProviderTesting">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="launchBrowser" is-config="true" duration-ms="17109" started-at="2019-03-06T08:45:32Z" finished-at="2019-03-06T08:45:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- extentReport.ExtentReportGeneration -->
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="fbLogin" duration-ms="24975" started-at="2019-03-06T08:45:49Z" data-provider="fbLoginDetails" finished-at="2019-03-06T08:46:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anjaneyulu.b.ram@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[r@m@nj@neyulu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="tearDown" is-config="true" duration-ms="883" started-at="2019-03-06T08:46:14Z" finished-at="2019-03-06T08:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="launchBrowser" is-config="true" duration-ms="11273" started-at="2019-03-06T08:46:15Z" finished-at="2019-03-06T08:46:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="fbLogin" duration-ms="4859" started-at="2019-03-06T08:46:26Z" data-provider="fbLoginDetails" finished-at="2019-03-06T08:46:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sfsfff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddgdgf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="tearDown" is-config="true" duration-ms="711" started-at="2019-03-06T08:46:31Z" finished-at="2019-03-06T08:46:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="launchBrowser" is-config="true" duration-ms="10292" started-at="2019-03-06T08:46:32Z" finished-at="2019-03-06T08:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="fbLogin" duration-ms="3439" started-at="2019-03-06T08:46:42Z" data-provider="fbLoginDetails" finished-at="2019-03-06T08:46:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dxff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfgf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="tearDown" is-config="true" duration-ms="767" started-at="2019-03-06T08:46:46Z" finished-at="2019-03-06T08:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="launchBrowser" is-config="true" duration-ms="10268" started-at="2019-03-06T08:46:46Z" finished-at="2019-03-06T08:46:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="fbLogin" duration-ms="4486" started-at="2019-03-06T08:46:57Z" data-provider="fbLoginDetails" finished-at="2019-03-06T08:47:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cggf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gdgdg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="tearDown" is-config="true" duration-ms="768" started-at="2019-03-06T08:47:01Z" finished-at="2019-03-06T08:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="launchBrowser" is-config="true" duration-ms="11531" started-at="2019-03-06T08:47:02Z" finished-at="2019-03-06T08:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="fbLogin" duration-ms="17874" started-at="2019-03-06T08:47:14Z" data-provider="fbLoginDetails" finished-at="2019-03-06T08:47:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fgf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hgvhg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-03-06T08:47:31Z" finished-at="2019-03-06T08:47:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="launchBrowser" is-config="true" duration-ms="9347" started-at="2019-03-06T08:47:32Z" finished-at="2019-03-06T08:47:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="fbLogin" duration-ms="3883" started-at="2019-03-06T08:47:42Z" data-provider="fbLoginDetails" finished-at="2019-03-06T08:47:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[badamramanjaneyulu@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a@ramu1133]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.topics.DataProviderTesting@42d80b78]" name="tearDown" is-config="true" duration-ms="788" started-at="2019-03-06T08:47:45Z" finished-at="2019-03-06T08:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.topics.DataProviderTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
